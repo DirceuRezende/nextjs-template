@@ -1,5 +1,6 @@
 import { AppDispatch } from '@/store';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { HYDRATE } from 'next-redux-wrapper';
 
 export type {{pascalCase name}}State = {
   value: number;
@@ -7,6 +8,10 @@ export type {{pascalCase name}}State = {
 
 const initialState: {{pascalCase name}}State = {
   value: 0
+};
+
+type Hydrate{{pascalCase name}}State = {
+  {{camelCase name}}: {{pascalCase name}}State;
 };
 
 const {{camelCase name}}Slice = createSlice({
@@ -23,6 +28,12 @@ const {{camelCase name}}Slice = createSlice({
 
     incrementByAmount: (state: {{pascalCase name}}State, action: PayloadAction<number>) => {
       state.value += action.payload;
+    }
+  },
+  extraReducers: {
+    [HYDRATE]: (state, action: PayloadAction<Hydrate{{pascalCase name}}State>) => {
+      console.log('HYDRATE PAYLOAD', action.payload.{{camelCase name}});
+      console.log('HYDRATE STATE', state.value);
     }
   }
 });

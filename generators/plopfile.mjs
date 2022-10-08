@@ -50,7 +50,7 @@ export default (plop) => {
       {
         type: 'add',
         path: '../src/features/{{camelCase name}}/pages/Home/index.ts',
-        templateFile: 'templates/index.ts.hbs'
+        templateFile: 'templates/indexPage.ts.hbs'
       },
       {
         type: 'add',
@@ -96,16 +96,6 @@ export default (plop) => {
         type: 'add',
         path: '../src/features/{{camelCase name}}/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
         templateFile: 'templates/stories.tsx.hbs'
-      },
-      {
-        type: 'add',
-        path: '../src/features/{{camelCase name}}/routes/index.ts',
-        templateFile: 'templates/routesIndex.ts.hbs'
-      },
-      {
-        type: 'add',
-        path: '../src/features/{{camelCase name}}/routes/routes.tsx',
-        templateFile: 'templates/routes.tsx.hbs'
       },
       {
         type: 'add',
