@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
     "target": "es5",
     "lib": [
@@ -10,7 +12,11 @@
       "dom.iterable",
       "esnext"
     ],
-    "types": ["cypress", "node", "jest"],
+    "types": [
+      "cypress",
+      "node",
+      "jest"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -20,7 +26,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true
   },
