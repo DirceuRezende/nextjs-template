@@ -1,4 +1,5 @@
-import * as S from './styles'
+import Link from 'next/link';
+import * as S from './styles';
 
 const Main = ({
   title = 'React Avançado',
@@ -15,7 +16,8 @@ const Main = ({
       src="/img/hero-illustration.svg"
       alt="Um desenvolvedor de frente para uma tela com código."
     />
+    <Link href="/counter">Go Home</Link>
   </S.Wrapper>
-)
+);
 
-export default Main
+export default Main;

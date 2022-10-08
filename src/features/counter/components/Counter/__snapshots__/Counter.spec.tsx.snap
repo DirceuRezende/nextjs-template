@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Counter /> should render the heading 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  color: #f1f1f1;
+  font-size: 15rem;
+}
+
+.c3 {
+  background-color: #010101;
+  border: none;
+  border-radius: 100%;
+  color: #f1f1f1;
+  cursor: pointer;
+  font-size: 5rem;
+  height: 7rem;
+  width: 7rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+<section
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    0
+  </span>
+  <div
+    class="c2"
+  >
+    <button
+      class="c3"
+    >
+      -
+    </button>
+    <button
+      class="c3"
+    >
+      +
+    </button>
+  </div>
+  <a
+    href="/"
+  >
+    Go Home
+  </a>
+</section>
+`;

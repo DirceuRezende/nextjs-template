@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Counter /> should render the heading 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #333333;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.c1 {
+  color: #f1f1f1;
+  font-size: 10rem;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c3 {
+  color: #f1f1f1;
+  font-size: 15rem;
+}
+
+.c5 {
+  background-color: #010101;
+  border: none;
+  border-radius: 100%;
+  color: #f1f1f1;
+  cursor: pointer;
+  font-size: 5rem;
+  height: 7rem;
+  width: 7rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+<main
+  class="c0"
+>
+  <h1
+    class="c1"
+  >
+    Counter
+  </h1>
+  <section
+    class="c2"
+  >
+    <span
+      class="c3"
+    >
+      0
+    </span>
+    <div
+      class="c4"
+    >
+      <button
+        class="c5"
+      >
+        -
+      </button>
+      <button
+        class="c5"
+      >
+        +
+      </button>
+    </div>
+    <a
+      href="/"
+    >
+      Go Home
+    </a>
+  </section>
+</main>
+`;

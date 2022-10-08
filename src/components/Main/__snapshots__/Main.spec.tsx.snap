@@ -67,5 +67,10 @@ exports[`<Main /> should render the heading 1`] = `
     class="c4"
     src="/img/hero-illustration.svg"
   />
+  <a
+    href="/counter"
+  >
+    Go Home
+  </a>
 </main>
-`
+`;

@@ -1,0 +1,42 @@
+import { AppDispatch } from '@/store';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
+export type {{pascalCase name}}State = {
+  value: number;
+};
+
+const initialState: {{pascalCase name}}State = {
+  value: 0
+};
+
+const {{camelCase name}}Slice = createSlice({
+  name: '{{camelCase name}}',
+  initialState,
+  reducers: {
+    increment(state: {{pascalCase name}}State) {
+      state.value += 1;
+    },
+
+    decrement(state: {{pascalCase name}}State) {
+      state.value -= 1;
+    },
+
+    incrementByAmount: (state: {{pascalCase name}}State, action: PayloadAction<number>) => {
+      state.value += action.payload;
+    }
+  }
+});
+
+export const { increment, decrement } = {{camelCase name}}Slice.actions;
+export default {{camelCase name}}Slice.reducer;
+
+function sleep(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export function asyncIncrement(): (dispatch: AppDispatch) => Promise<void> {
+  return async function (dispatch: AppDispatch) {
+    await sleep(3000);
+    dispatch(increment());
+  };
+}
