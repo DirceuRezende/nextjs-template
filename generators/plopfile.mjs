@@ -70,7 +70,7 @@ export default (plop) => {
       {
         type: 'add',
         path: '../src/features/{{camelCase name}}/pages/Home/Home.stories.tsx',
-        templateFile: 'templates/stories.tsx.hbs'
+        templateFile: 'templates/homeStories.tsx.hbs'
       },
       {
         type: 'add',
