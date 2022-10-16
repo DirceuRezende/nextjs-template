@@ -13,7 +13,6 @@
       "esnext"
     ],
     "types": [
-      "cypress",
       "node",
       "jest"
     ],
@@ -31,11 +30,13 @@
     "incremental": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "./cypress.config.ts"
   ],
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    ".jest/*.ts"
   ]
 }
